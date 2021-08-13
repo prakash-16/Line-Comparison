@@ -21,12 +21,13 @@ public class LineComparison {
 		    //Length of line
 		    len_of_line[i-1] = Math.sqrt(Math.pow(x[1]-x[0],2) + Math.pow(y[1]-y[0],2));	
 		}
-		if(len_of_line[0]==len_of_line[1]) {
+		if (len_of_line[0] == len_of_line[1] ) {
 			System.out.println("The lenght of both the lines are equal");
+		} else if (len_of_line[0] > len_of_line[1] ) {
+			System.out.println("Length of line-1 is greater than line-2");
+		} else if (len_of_line[0] < len_of_line[1] ) {
+			System.out.println("Length of line-1 is smaller than line-2");
 		}
-		else {
-			System.out.println("The lenght of both the lines are not equal");
-		} 
 	}
 
 }
